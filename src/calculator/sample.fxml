@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<VBox alignment="center" prefHeight="359.0" prefWidth="310.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calculator.ControllerС">
+      <children>
+         <TextField fx:id="calcHistory" alignment="CENTER_RIGHT" editable="false" focusTraversable="false" prefHeight="42.0" prefWidth="310.0">
+            <font>
+               <Font size="14.0" />
+            </font>
+         </TextField>
+         <TextField fx:id="calcEnter" alignment="CENTER_RIGHT" focusTraversable="false" prefHeight="72.0" prefWidth="310.0" promptText="0">
+            <font>
+               <Font size="28.0" />
+            </font>
+         </TextField>
+         <GridPane prefHeight="333.0" prefWidth="300.0">
+            <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            </columnConstraints>
+            <rowConstraints>
+               <RowConstraints maxHeight="122.00005594889325" minHeight="10.0" prefHeight="84.33335367838542" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="256.66671117146814" minHeight="0.0" prefHeight="81.66664632161458" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="256.66671117146814" minHeight="0.0" prefHeight="83.33333333333331" vgrow="SOMETIMES" />
+               <RowConstraints maxHeight="265.3333168029785" minHeight="10.0" prefHeight="85.66666666666669" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="265.3333168029785" minHeight="10.0" prefHeight="85.66666666666669" vgrow="SOMETIMES" />
+            </rowConstraints>
+            <children>
+               <Button id="btn1" focusTraversable="false" onAction="#clickNum" prefHeight="85.0" prefWidth="85.0" text="1" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.rowIndex="3" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btnEqual" focusTraversable="false" mnemonicParsing="false" onAction="#clickResult" prefHeight="167.0" prefWidth="75.0" text="=" GridPane.columnIndex="4" GridPane.hgrow="ALWAYS" GridPane.rowIndex="2" GridPane.rowSpan="2147483647" GridPane.vgrow="ALWAYS">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btn6" focusTraversable="false" mnemonicParsing="false" onAction="#clickNum" prefHeight="85.0" prefWidth="85.0" text="6" GridPane.columnIndex="2" GridPane.rowIndex="2">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btn5" focusTraversable="false" mnemonicParsing="false" onAction="#clickNum" prefHeight="85.0" prefWidth="85.0" text="5" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btn4" focusTraversable="false" mnemonicParsing="false" onAction="#clickNum" prefHeight="85.0" prefWidth="85.0" text="4" GridPane.rowIndex="2">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btn3" focusTraversable="false" mnemonicParsing="false" onAction="#clickNum" prefHeight="85.0" prefWidth="85.0" text="3" GridPane.columnIndex="2" GridPane.rowIndex="3">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btn2" focusTraversable="false" mnemonicParsing="false" onAction="#clickNum" prefHeight="85.0" prefWidth="85.0" text="2" GridPane.columnIndex="1" GridPane.rowIndex="3">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btnDel" focusTraversable="false" mnemonicParsing="false" onAction="#clickDelete" prefHeight="85.0" prefWidth="85.0" text="DEL" GridPane.columnIndex="4" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="19.0" />
+                  </font>
+               </Button>
+               <Button id="btnMulti" focusTraversable="false" mnemonicParsing="false" onAction="#clickMulti" prefHeight="85.0" prefWidth="85.0" text="*" GridPane.columnIndex="3" GridPane.rowIndex="2">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btnDivide" focusTraversable="false" mnemonicParsing="false" onAction="#clickDivide" prefHeight="85.0" prefWidth="85.0" text="/" GridPane.columnIndex="3" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btn9" focusTraversable="false" mnemonicParsing="false" onAction="#clickNum" prefHeight="85.0" prefWidth="85.0" text="9" GridPane.columnIndex="2" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btnSqrtX" focusTraversable="false" mnemonicParsing="false" onAction="#clickSqrtX" prefHeight="85.0" prefWidth="85.0" text="√x" GridPane.columnIndex="2">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btnX2" focusTraversable="false" mnemonicParsing="false" onAction="#clickX2" prefHeight="85.0" prefWidth="85.0" text="x²" GridPane.columnIndex="1">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btn8" focusTraversable="false" mnemonicParsing="false" onAction="#clickNum" prefHeight="85.0" prefWidth="85.0" text="8" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btn7" focusTraversable="false" mnemonicParsing="false" onAction="#clickNum" prefHeight="85.0" prefWidth="85.0" text="7" GridPane.rowIndex="1">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btnCE" focusTraversable="false" mnemonicParsing="false" onAction="#clearAll" prefHeight="55.0" prefWidth="125.0" text="CE" GridPane.columnIndex="3" GridPane.columnSpan="2147483647">
+                  <font>
+                     <Font name="Franklin Gothic Medium Cond" size="19.0" />
+                  </font>
+               </Button>
+               <Button id="btnPlus" focusTraversable="false" mnemonicParsing="false" onAction="#clickPlus" prefHeight="115.0" prefWidth="62.0" text="+" GridPane.columnIndex="3" GridPane.rowIndex="4">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btnMinus" focusTraversable="false" mnemonicParsing="false" onAction="#clickMinus" prefHeight="85.0" prefWidth="85.0" text="-" GridPane.columnIndex="3" GridPane.rowIndex="3">
+                  <font>
+                     <Font name="Arial Italic" size="20.0" />
+                  </font>
+               </Button>
+               <Button id="btnPM" focusTraversable="false" mnemonicParsing="false" onAction="#clickPM" prefHeight="85.0" prefWidth="85.0" text="+/-">
+                  <font>
+                     <Font size="20.0" />
+                  </font>
+               </Button>
+            <Button id="btn0" focusTraversable="false" mnemonicParsing="false" onAction="#clickNum" prefHeight="56.0" prefWidth="125.0" text="0" GridPane.columnSpan="2147483647" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button id="btnDot" focusTraversable="false" mnemonicParsing="false" onAction="#clickDot" prefHeight="66.0" prefWidth="91.0" text="." GridPane.columnIndex="2" GridPane.rowIndex="4">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            </children>
+         </GridPane>
+      </children>
+   </VBox>
